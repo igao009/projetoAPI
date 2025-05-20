@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imobilaria - API</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <a href="#" id="nav-home" class="active">Home</a>
+            <a href="#" id="nav-sobre">Sobre</a>
+            <a href="#" id="nav-cadastro">Cadastro</a>
+        </nav>
+    </header>
+
+    <section id="home-section">
+        <h1>Venda de Apartamentos e Imóveis</h1>
+        <p>Encontre os melhores apartamentos e imóveis para comprar. Oferecemos opções modernas, seguras e com excelente localização para você e sua família.</p>
+    </section>
+
+    <section id="sobre-section" style="display:none;">
+        <h1>Sobre a Empresa</h1>
+        <p>Somos uma imobiliária especializada na venda de apartamentos e imóveis residenciais. Nosso compromisso é oferecer atendimento de qualidade, transparência e as melhores oportunidades do mercado imobiliário.</p>
+    </section>
+
+    <section id="cadastro-section" style="display:none;">
+        <h1>Cadastro</h1>
+        <form id="cadastro-form">
+            <label>Nome:
+                <input type="text" name="nome" required>
+            </label>
+            <label>Telefone:
+                <input type="tel" name="telefone" required>
+            </label>
+            <label>CPF:
+                <input type="text" name="cpf" required>
+            </label>
+            <label>Endereço:
+                <input type="text" name="endereco" required>
+            </label>
+            <label>Número:
+                <input type="text" name="numero" required>
+            </label>
+            <label>Bairro:
+                <input type="text" name="bairro" required>
+            </label>
+            <label>Cidade:
+                <input type="text" name="cidade" required>
+            </label>
+            <label>CEP:
+                <input type="text" name="cep" required>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="main.js"></script>
 </body>
 </html>
